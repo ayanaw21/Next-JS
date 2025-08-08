@@ -18,7 +18,7 @@ const Navbar = () => {
 					<MdHomeFilled className="text-white bg-background w-9 h-9 grid place-items-center text-2xl rounded-full" />
 				</Link>
 				<div className="bg-background hidden lg:flex items-center h-11 w-90 px-3 gap-3 text-primary-text rounded-full">
-					<GoSearch className="text-primary-text shrink-0" />
+					<GoSearch size={22} className="text-primary-text shrink-0" />
 					<input
 						type="text"
 						placeholder="What do you want to play"
