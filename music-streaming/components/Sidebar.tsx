@@ -11,7 +11,7 @@ const Sidebar = () => {
 	return (
 		<div>
 			<aside
-				className={`fixed left-2 top-15 bg-background w-75 round-lg  h-[90vh] p-2 overflow-y-auto  ${
+				className={`fixed z-50 left-2 top-15 bg-background w-75 round-lg  h-[90vh] p-2 overflow-y-auto  ${
 					isSidebarOpen ? "translate-x-0" : "-translate-x-full "
 				} transition-transform duration-500 lg:translate-x-0`}
 			>
@@ -85,7 +85,7 @@ const Sidebar = () => {
 				</div>
 			</aside>
 			<button
-				className="fixed bottom-5 left-5 bg-background h-12 grid lg:hidden place-items-center text-white rounded-full z-50 cursor-pointer"
+				className="fixed bottom-5 left-5 bg-background h-12 grid lg:hidden place-items-center text-white rounded-full z-51 cursor-pointer"
 				onClick={() => setSidebarOpen(!isSidebarOpen)}
 			>
 				<MdOutlineLibraryMusic />

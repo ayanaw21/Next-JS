@@ -52,9 +52,9 @@ const AllSongs = () => {
 					</div>
 				</div>
 				<div className="relative group bg-background b-3 cursor-pointer rounded-md hover:bg-hover">
-					<button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
-						<IoMdPlay />
-					</button>
+                     <button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
+                        <IoMdPlay/>
+                    </button>
 					<Image
 						src={"/images/cover-10.jpeg"}
 						alt="cover-image"
@@ -73,9 +73,9 @@ const AllSongs = () => {
 					</div>
 				</div>
 				<div className="relative group bg-background b-3 cursor-pointer rounded-md hover:bg-hover">
-					<button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
-						<IoMdPlay />
-					</button>
+                     <button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
+                        <IoMdPlay/>
+                    </button>
 					<Image
 						src={"/images/cover-9.jpeg"}
 						alt="cover-image"
@@ -94,9 +94,9 @@ const AllSongs = () => {
 					</div>
 				</div>
 				<div className="relative group bg-background b-3 cursor-pointer rounded-md hover:bg-hover">
-					<button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
-						<IoMdPlay />
-					</button>
+                     <button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
+                        <IoMdPlay/>
+                    </button>
 					<Image
 						src={"/images/cover-8.jpeg"}
 						alt="cover-image"
@@ -115,9 +115,9 @@ const AllSongs = () => {
 					</div>
 				</div>
 				<div className="relative group bg-background b-3 cursor-pointer rounded-md hover:bg-hover">
-					<button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
-						<IoMdPlay />
-					</button>
+                     <button className="bg-primary w-12 h-12 rounded-full grid  place-items-center absolute bottom-8 right-5 opacity-0 group-hover:opacity-100 group-hover:bottom-18 transition-all duration-300 ease-in-out:cursor-pointer">
+                        <IoMdPlay/>
+                    </button>
 					<Image
 						src={"/images/cover-7.jpeg"}
 						alt="cover-image"
