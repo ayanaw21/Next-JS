@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { LuPlus } from "react-icons/lu";
 import Image from "next/image";
 import { MdOutlineLibraryMusic } from "react-icons/md";
+import { FaTrash } from "react-icons/fa";
 const Sidebar = () => {
 	const [isSidebarOpen, setSidebarOpen] = useState(false);
 	return (
@@ -15,13 +16,36 @@ const Sidebar = () => {
 				} transition-transform duration-500 lg:translate-x-0`}
 			>
 				<div className="flex justify-between text-primary-text items-center p-2 mb-4">
-					<h2 className="font-bold">Yo  ur Library</h2>
+					<h2 className="font-bold">Your Library</h2>
 					<Link href={"/upload-song"}>
 						<LuPlus size={20} />
 					</Link>
 				</div>
 				<div>
-					<div className="flex gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover">
+					<div className="flex  gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover relative group">
+						<Image
+							src="/images/cover-1.jpeg"
+							width={300}
+							height={300}
+							className="w-10 h-10 object-cover rounded-md"
+							alt="cover-image"
+						/>
+						<div>
+							<p className="text-primary-text font-semibold">
+								Midnight Echoes
+							</p>
+							<p className="text-secondary-text text-sm">
+								By Neon Skyline
+							</p>
+						</div>
+						<button className="text-secondary-text absolute top-1/2 right-2 text-center -translate-y-1/2 cursor-pointer hidden group-hover:block">
+							<FaTrash />
+						</button>
+					</div>{" "}
+					<div className="flex gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover group relative">
+						<button className="text-secondary-text absolute top-1/2 right-2 text-center -translate-y-1/2 cursor-pointer hidden group-hover:block">
+							<FaTrash />
+						</button>
 						<Image
 							src="/images/cover-1.jpeg"
 							width={300}
@@ -38,24 +62,10 @@ const Sidebar = () => {
 							</p>
 						</div>
 					</div>{" "}
-					<div className="flex gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover">
-						<Image
-							src="/images/cover-1.jpeg"
-							width={300}
-							height={300}
-							className="w-10 h-10 object-cover rounded-md"
-							alt="cover-image"
-						/>
-						<div>
-							<p className="text-primary-text font-semibold">
-								Midnight Echoes
-							</p>
-							<p className="text-secondary-text text-sm">
-								By Neon Skyline
-							</p>
-						</div>
-					</div>{" "}
-					<div className="flex gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover">
+					<div className="flex gap-2 items-center cursor-pointer mb-4 p-2 rounded-lg hover:bg-hover group relative">
+						<button className="text-secondary-text absolute top-1/2 right-2 text-center -translate-y-1/2 cursor-pointer hidden group-hover:block">
+							<FaTrash />
+						</button>
 						<Image
 							src="/images/cover-1.jpeg"
 							width={300}
