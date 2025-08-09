@@ -1,27 +1,33 @@
 "use client";
+import { PlayerContext } from "@/layouts/FrontendLayout";
 import Image from "next/image";
-import React, { use, useEffect, useRef, useState } from "react";
+import React, { use, useContext, useEffect, useRef, useState } from "react";
 import {
 	IoMdPause,
 	IoMdPlay,
 	IoMdSkipBackward,
 	IoMdSkipForward,
 	IoMdVolumeHigh,
-	IoMdVolumeLow,
-	IoMdVolumeMute,
 	IoMdVolumeOff,
 } from "react-icons/io";
 import { LuRepeat1 } from "react-icons/lu";
 import { MdOutlineQueueMusic } from "react-icons/md";
 
+
 const MusicPlayer = () => {
 	const audioRef = useRef<HTMLAudioElement | null>(null);
+
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [volume, setVolume] = useState(50);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [duration, setDuration] = useState(0);
 	// const [isMuted,setIsMuted] = useState(false);
 	const [previousVolume, setPreviousVolume] = useState(0);
+	const context = useContext(PlayerContext)
+	if(!context){
+		throw new Error("PlayerContext must be with in a provider")
+	}
+	const {isQueueModalOpen,setQueueModalOpen} = context;
 	const togglePlayButton = () => {
 		if (!audioRef.current) return;
 		if (isPlaying) {
@@ -148,7 +154,7 @@ const MusicPlayer = () => {
 					<button className="text-secondary-text text-xl cursor-pointer">
 						<LuRepeat1 />
 					</button>
-					<button className="text-secondary-text text-xl cursor-pointer">
+					<button onClick={()=>{setQueueModalOpen(!isQueueModalOpen)}} className="text-secondary-text text-xl cursor-pointer">
 						<MdOutlineQueueMusic />
 					</button>
 					<button onClick={toggleMute} className="text-secondary-text text-xl cursor-pointer">
