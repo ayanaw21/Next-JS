@@ -7,6 +7,7 @@ interface Props {
 }
 const ProductList = ({ products }: Props) => {
 	const [searchTerm, setSearchTerm] = useState<string>("");
+
 	const filteredProducts = products.filter((product) => {
 		const term = searchTerm.toLowerCase();
 		const nameMatch = product.name.toLowerCase().includes(term);
@@ -15,6 +16,7 @@ const ProductList = ({ products }: Props) => {
 			: false;
 		return nameMatch || descriptionMatch;
 	});
+
 	return (
 		<div>
 			<div className="mb-6 flex justify-center">
