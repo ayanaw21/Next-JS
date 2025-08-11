@@ -80,9 +80,7 @@ const CheckoutPage = () => {
 				<Button variant={"default"} type="submit" className="w-full">
 					Proceed to Payment
 				</Button>
-				{/* <Button variant={"default"}  type="submit" onClick={clearCart}  className="w-full mt-3">
-            Clear Cart
-        </Button> */}
+				
 			</form>
 		</div>
 	);
