@@ -9,7 +9,7 @@ import React from 'react'
 const DashboardPage = () => {
     const {user} = useUser()
     const {createBoard} = useBoards()
-    const handleCreateBoard = async ()=>{
+    const handleCreateBoard = async ()=>{ 
         await createBoard({title:"New Board"})
     }
   return (
@@ -19,7 +19,7 @@ const DashboardPage = () => {
             <div className='mb-6 sm:mb-8'>
                 <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 mb-2' >Welcome back , {user?.firstName ?? user?.emailAddresses[0].emailAddress}! 👋 </h1>
                 <p className='text-gray-600'>Here`s what`s happening with your dashboard today.</p>
-                <Button className='w-full sm:w-auto'>
+                <Button className='w-full sm:w-auto cursor-pointer'>
                     <Plus className='h-4 w-4 mr-2' onClick={handleCreateBoard}/>
                     Create Board
                 </Button>
